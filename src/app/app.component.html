@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- <ul>
+    <ng-container *ngFor="let user of users; trackBy: trackById">
+      <li>id: {{ user.id }} | Name: {{ user.name }}</li>
+    </ng-container>Google
+  </ul> -->
+  @for(userdata of users;track userdata.id) {
+  <ul>
+    <li>id:{{ userdata.id }} | name: {{ userdata.name }}</li>
+  </ul>
+  }
+
+  <div class="button-container">
+    <button (click)="sortAscending()">Sort Ascending</button>
+    <button (click)="sortDescending()">Sort Descending</button>
+  </div>
+</div>
